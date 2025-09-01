@@ -75,7 +75,7 @@ main {
 .main-content {
     width: 650px;
     height: 400px;
-    background-color: rgb(241, 239, 238); /* Alice Blue */
+    background-color: rgb(241, 239, 238); 
 }
 
 .main-content h2 {
