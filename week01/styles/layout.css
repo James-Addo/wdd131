@@ -30,7 +30,7 @@ header {
     align-items: center;
     height: 110px;
     grid-column: 1/3;
-    box-shadow: 6px 5px 10px grey;
+    box-shadow: 5px 5px 10px grey;
 }
 
 header,
