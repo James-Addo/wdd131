@@ -19,7 +19,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template: auto 1fr auto / 1fr auto;
     font-family: var(--body-font);
     color: var(--primary-color);
 }
@@ -84,6 +84,7 @@ main {
 
 aside {
     width: 250px;
+    background-color: lightgrey;
 } 
 
 aside h2 {

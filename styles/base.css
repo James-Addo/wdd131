@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #120A8F;
+    /* Ultramarine */
+    --secondary-color: #BA160C;
+    /* Engineering Orange */
+    --accent1-color: #fbfbed;
+    /* Pale Yellow */
+    --accent2-color: #FBEEAC;
+    /* Pale Tan */
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header,
+main,
+footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    grid-column: 1/3;
+    box-shadow: 0 0 30px gray;
+}
+
+header h1 {
+    margin: 10px 0 0 0;
+    padding: 1rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    font-family: var(--heading-font);
+    margin: 10px 0 0 0;
+    background-color: rgb(242, 237, 224);
+}
+
+header nav a {
+    display: block;
+    width: 120px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary-color)
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.main {
+    width: 650px;
+    padding: 10px;
+    margin: 5px 0 0 250px;
+}
+
+#name {
+    grid-template-columns: 1/3;
+    color: rgb(91, 70, 19);
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+#about {
+    font-size: 20px;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.about-me {
+    grid-template-columns: 1/2;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.about-me img {
+    float: right;
+    border-radius: 10px;
+    margin: 5px;
+    width: 150px;
+    height: 200px;
+}
+
+/* .location {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 40px 0 0 0;
+}
+
+.location h2 {
+    grid-column: 1/3;
+    margin: 0 0 0 60px;
+    ;
+    border-bottom: 1px solid black;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0.5px 0.7px gray;
+
+}
+
+.location figure {
+    grid-column: 1/2;
+    align-items: center;
+    margin: 40px 0 0 20px;
+
+}
+
+.location p {
+    grid-column: 2/3;
+    width: 230px;
+    text-align: justify;
+    margin: 20px 0 0 0;
+}
+
+.location img {
+    width: 162px;
+}
+
+figcaption {
+    margin: 5px 0 0 10px;
+
+} */
+
+
+
+
+/* .main-content {
+    width: 650px;
+    height: 400px;
+    background-color: rgb(241, 239, 238); 
+}
+
+.main-content h2 {
+    padding: 20px 0 0 20px;
+}
+
+aside {
+    width: 250px;
+} 
+
+aside h2 {
+    padding: 20px 0 0 20px;
+} */
+
+footer {
+    grid-column: 1/3;
+    background-color: #e5e5d9;
+    ;
+    /* Light Gray */
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+    height: 200px;
+}
+
+
+/* aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #dcdcdc;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 130px;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    display: block;
+}
+
+h1 {
+    color: darkblue;
+    margin: 20px;
+    margin-bottom: 1rem;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+}
+
+p {
+    padding: 0;
+}
+
+main p {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+/* Class Selectors */
+/* .box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: rgb(237, 231, 231);
+    color: black;
+}
+
+.indent {
+    padding-left: 2rem;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1f 2f;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+} */
+*/
