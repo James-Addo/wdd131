@@ -1,0 +1,33 @@
+@media only screen and (min-width: 641px) {
+    h1 {
+        font-size: 2rem;
+        color: #000;
+        margin: 10px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+    }
+
+    .nav-links:hover {
+        color: var(--secondary-color);
+        font-weight: 1000;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+}
