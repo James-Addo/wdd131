@@ -52,7 +52,7 @@ header {
 h1 {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    color:rgb(91, 70, 19);
+    color: rgb(91, 70, 19);
     margin: 10px;
     text-align: center;
     align-items: center;
@@ -128,7 +128,7 @@ footer {
     background-color: #e5e5d9;
     text-align: center;
     padding: 20px 0;
-    height: 100px;
+    height: auto;
     margin-top: 20px;
     border-top: 1px solid black;
 }
