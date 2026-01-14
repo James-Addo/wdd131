@@ -30,8 +30,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     place-items: center;
-    width: 90%;
     margin: 0 auto;
+    width: 95%;
 }
 
 header {
@@ -89,7 +89,6 @@ h1 {
     color: gold;
     font-weight: 700;
     font-weight: bolder;
-
 }
 
 .nav-links a:hover,
