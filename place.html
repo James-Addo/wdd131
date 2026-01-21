@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - James Emmanuel Addo</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Country Webpage">
+    <meta name="author" content="James Emmanuel Addo">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+    <div class="allowance">
+
+    </div>
+    <!-- <div> -->
+    <main>
+        <picture>
+            <source srcset="images/waterfall-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/waterfall-medium.webp" media="(min-width: 550px)">
+            <img src="images/waterfall-small.webp" alt="Water Fall" width="500" height="250">
+        </picture>
+
+        <div class="table-1">
+            <h2>Data</h2>
+            <table id="align">
+                <tbody>
+                    <tr>
+                        <th>Area:</th>
+                        <td>240,000 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>35,039,451</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Accra</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Fante, Twi, English</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Cedi</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>GMT; UTC+00:00</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+233</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.gh</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-2">
+            <h2>Weather<span class="emoji">🌦️</span></h2>
+            <div class="svg-container">
+                <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="40" r="16" fill="#D4AF37" />
+                    <g stroke="#D4AF37" stroke-width="4" stroke-linecap="round">
+                        <line x1="44" y1="8" x2="44" y2="0" />
+                        <line x1="44" y1="80" x2="44" y2="72" />
+                        <line x1="12" y1="40" x2="0" y2="40" />
+                        <line x1="76" y1="40" x2="88" y2="40" />
+                        <line x1="22" y1="18" x2="14" y2="10" />
+                        <line x1="66" y1="62" x2="74" y2="70" />
+                        <line x1="22" y1="62" x2="14" y2="70" />
+                        <line x1="66" y1="18" x2="74" y2="10" />
+                    </g>
+                    <path d="
+                              M88 86
+                              H34
+                              C22 86 14 78 14 68
+                              C14 58 22 52 32 52
+                              C36 40 48 32 64 32
+                              C80 32 92 40 96 52
+                              H100
+                              C112 52 118 60 118 70
+                              C118 80 110 86 98 86
+                              Z
+                            " fill="#BFE6FF" />
+                </svg>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td id="temp">10 &deg;C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td id="wind">18 <span>km/h</span></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill</th>
+                        <td id="windchill"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🌲 James Emmanuel Addo 🌲 Ghana</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

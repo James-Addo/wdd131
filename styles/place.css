@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #038303;
+    --secondary-color: rgb(254, 217, 5);
+    --text-color-1: rgb(255, 255, 255);
+    --background-color-1: rgb(255, 255, 255);
+    --background-color-2: rgb(18, 18, 18);
+    --background-color-3: red;
+    --h2-margin: 25px auto 25px auto;
+    --table-border-radius: 10px;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 3px 4px 10px rgb(238, 169, 126);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--text-color-1);
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.svg-container {
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+h2 {
+    text-align: center;
+    margin: var(--h2-margin);
+    background-color: var(--secondary-color);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+    font-family: var(--heading-font);
+}
+
+.emoji {
+    display: none;
+}
+
+.table-1,
+.table-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    place-items: center;
+    border-radius: var(--table-border-radius);
+    border-bottom: 5px solid var(--background-color-3);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.allowance {
+    background-color: var(--background-color-3);
+    height: 10px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#align {
+    padding-left: 60px;
+}
+
+th {
+    text-align: right;
+    font-family: var(--body-font);
+}
+
+td {
+    padding: 6px;
+    font-family: var(--body-font);
+}
+
+footer {
+    background-color: var(--background-color-2);
+    text-align: center;
+    padding: 20px 0;
+    height: auto;
+    border-top: 1px solid var(--background-color-2);
+}
+
+footer p {
+    font-family: var(--body-font);
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    color: var(--text-color-1);
+}
