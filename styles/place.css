@@ -20,7 +20,7 @@
 header,
 main,
 footer {
-    max-width: 900px;
+    max-width: 870px;
     margin: 0 auto;
 }
 
@@ -66,10 +66,6 @@ h2 {
     font-family: var(--heading-font);
 }
 
-.emoji {
-    display: none;
-}
-
 .table-1,
 .table-2 {
     margin-left: auto;
@@ -85,12 +81,8 @@ h2 {
 .allowance {
     background-color: var(--background-color-3);
     height: 10px;
-    width: 900px;
+    width: 870px;
     margin: 0 auto;
-}
-
-#align {
-    padding-left: 60px;
 }
 
 th {
