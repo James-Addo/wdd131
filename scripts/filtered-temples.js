@@ -151,59 +151,60 @@ function createTempleCard(templesToDisplay = temples) {
     })
 }
 
-function getYearFromDedicated(dedicated) {
-    if (!dedicated) return null;
-    const m = dedicated.match(/(\d{4})/);
-    return m ? parseInt(m[1], 10) : null;
+function filterOldTemples(templeArray) {
+    return templeArray.filter(temple => {
+        const year = parseInt(temple.dedicated.split(',')[0]);
+        return year < 1900;
+    });
 }
 
-function showAll() {
+function filterNewTemples(templeArray) {
+    return templeArray.filter(temple => {
+        const year = parseInt(temple.dedicated.split(',')[0]);
+        return year > 2000;
+    });
+}
+
+function filterLargeTemples(templeArray) {
+    return templeArray.filter(temple => temple.area > 90000);
+}
+
+function filterSmallTemples(templeArray) {
+    return templeArray.filter(temple => temple.area < 10000);
+}
+
+document.getElementById('home').addEventListener('click', (e) => {
+    e.preventDefault();
     createTempleCard(temples);
-}
-
-function showOld() {
-    const filtered = temples.filter(t => {
-        const y = getYearFromDedicated(t.dedicated);
-        return y !== null && y < 1900;
-    });
-    createTempleCard(filtered);
-}
-
-function showNew() {
-    const filtered = temples.filter(t => {
-        const y = getYearFromDedicated(t.dedicated);
-        return y !== null && y > 2000;
-    });
-    createTempleCard(filtered);
-}
-
-function showLarge() {
-    const filtered = temples.filter(t => Number(t.area) > 90000);
-    createTempleCard(filtered);
-}
-
-function showSmall() {
-    const filtered = temples.filter(t => Number(t.area) < 10000);
-    createTempleCard(filtered);
-}
-
-const handlers = {
-    home: showAll,
-    old: showOld,
-    new: showNew,
-    large: showLarge,
-    small: showSmall
-};
-
-Object.keys(handlers).forEach(key => {
-    const ids = [key, `filter-${key}`];
-    ids.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.addEventListener('click', e => { e.preventDefault(); handlers[key](); });
-    });
 });
 
-showAll();
+document.getElementById('old').addEventListener('click', (e) => {
+    e.preventDefault();
+    createTempleCard(filterOldTemples(temples));
+});
+
+document.getElementById('new').addEventListener('click', (e) => {
+    e.preventDefault();
+    createTempleCard(filterNewTemples(temples));
+});
+
+document.getElementById('large').addEventListener('click', (e) => {
+    e.preventDefault();
+    createTempleCard(filterLargeTemples(temples));
+});
+
+document.getElementById('small').addEventListener('click', (e) => {
+    e.preventDefault();
+    createTempleCard(filterSmallTemples(temples));
+});
+
+createTempleCard(temples);
+
+
+
+
+
+
 
 
 

@@ -67,7 +67,6 @@ header {
     text-align: left;
     text-decoration: none;
     color: gold;
-    font-weight: 700;
     font-weight: bolder;
     font-size: 1.6rem;
 }
@@ -165,3 +164,4 @@ footer p {
     margin: 5px 0 0 0;
     font-size: 20px;
 }
+
