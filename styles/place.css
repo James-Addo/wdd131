@@ -18,9 +18,8 @@
 }
 
 header,
-main,
 footer {
-    max-width: 870px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -42,6 +41,8 @@ h1 {
 
 main {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 img {
@@ -81,7 +82,7 @@ h2 {
 .allowance {
     background-color: var(--background-color-3);
     height: 10px;
-    width: 870px;
+    width: 1500px;
     margin: 0 auto;
 }
 
