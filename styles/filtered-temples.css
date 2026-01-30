@@ -103,9 +103,10 @@ main {
 
 .temple-container {
     display: grid;
+    /* Automatically fit columns with a minimum size of 280px */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 25px;
-    margin: 40px 0;
+    gap: 20px;
+    padding: 20px;
 }
 
 .temple-container section {
@@ -139,10 +140,12 @@ main {
 
 .temple-container img {
     border-radius: 6px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
     margin: 15px auto 15px auto;
     display: block;
     box-shadow: 10px 20px 36px rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 95%;
     height: auto;
 }
 

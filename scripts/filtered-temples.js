@@ -103,23 +103,23 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     },
 
-    {
-        templeName: "Paris France",
-        location: "Le Chesnay, France",
-        dedicated: "2017, May, 21",
-        area: 44175,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
-    },
+    // {
+    //     templeName: "Paris France",
+    //     location: "Le Chesnay, France",
+    //     dedicated: "2017, May, 21",
+    //     area: 44175,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
+    // },
 
-    {
-        templeName: "Kyiv Ukraine",
-        location: "Kyiv, Ukraine",
-        dedicated: "2010, August, 29",
-        area: 22184,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/134-Kyiv-Ukraine-Temple.jpg"
-    },
+    // {
+    //     templeName: "Kyiv Ukraine",
+    //     location: "Kyiv, Ukraine",
+    //     dedicated: "2010, August, 29",
+    //     area: 22184,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/_temp/134-Kyiv-Ukraine-Temple.jpg"
+    // },
 ];
 
 
