@@ -44,8 +44,10 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: #000;
+    background-color: var(--primary-color);
     color: var(--accent1-color);
+    cursor: pointer;
+    border: none;
 }
 
 #nav-menu::before {
@@ -87,7 +89,6 @@ header {
 
 h1 {
     font-family: var(--heading-font);
-    font-size: 2.5rem;
     color: rgb(91, 70, 19);
     margin: 15px;
     text-align: center;
@@ -103,17 +104,16 @@ main {
 .temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 25px;
     margin: 40px 0;
 }
 
 .temple-container section {
-    border: 0.5px solid rgb(225, 222, 222);
+    border: 1px solid rgb(225, 222, 222);
     border-radius: 8px;
     background-color: #f5f5f5;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1);
     padding: 0;
-    overflow: hidden;
 }
 
 .temple-container section:hover {
@@ -138,12 +138,12 @@ main {
 }
 
 .temple-container img {
-    width: 94%;
-    height: auto;
     border-radius: 6px;
     margin: 15px auto 15px auto;
     display: block;
     box-shadow: 10px 20px 36px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: auto;
 }
 
 .temple-container .label {
@@ -164,4 +164,3 @@ footer p {
     margin: 5px 0 0 0;
     font-size: 20px;
 }
-

@@ -114,9 +114,9 @@ const temples = [
 
     {
         templeName: "Kyiv Ukraine",
-        location: "Le Chesnay, France",
-        dedicated: "2017, May, 21",
-        area: 44175,
+        location: "Kyiv, Ukraine",
+        dedicated: "2010, August, 29",
+        area: 22184,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/_temp/134-Kyiv-Ukraine-Temple.jpg"
     },
@@ -124,7 +124,8 @@ const temples = [
 
 
 function createTempleCard(templesToDisplay = temples) {
-    document.querySelector(".temple-container").innerHTML = "";
+    const container = document.querySelector(".temple-container");
+    container.innerHTML = "";
     templesToDisplay.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
@@ -140,6 +141,8 @@ function createTempleCard(templesToDisplay = temples) {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "350");
+        img.setAttribute("height", "170");
 
         card.appendChild(name);
         card.appendChild(location);
@@ -147,7 +150,7 @@ function createTempleCard(templesToDisplay = temples) {
         card.appendChild(area);
         card.appendChild(img);
 
-        document.querySelector(".temple-container").appendChild(card);
+        container.appendChild(card);
     })
 }
 
@@ -199,6 +202,8 @@ document.getElementById('small').addEventListener('click', (e) => {
 });
 
 createTempleCard(temples);
+
+
 
 
 
