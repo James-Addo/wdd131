@@ -137,7 +137,7 @@ function createTempleCard(templesToDisplay = temples) {
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label"><strong>Location:</strong></span> ${temple.location}`;
         dedication.innerHTML = `<span class="label"><strong>Dedicated:</strong></span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label"><strong>Size:</strong></span> ${temple.area}`;
+        area.innerHTML = `<span class="label"><strong>Size:</strong></span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
@@ -202,21 +202,3 @@ document.getElementById('small').addEventListener('click', (e) => {
 });
 
 createTempleCard(temples);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
