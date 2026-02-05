@@ -6,15 +6,15 @@
     --body-font: "Lato", sans-serif;
 }
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 main,
 footer {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -94,13 +94,23 @@ body {
 .web-form label {
     padding-top: 1rem;
     font-size: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     width: 100%;
 }
 
 #features {
-    margin-top: 0;
     border: 1px solid black;
+}
+
+#product-label,
+#rating-label,
+#features-label,
+#installation-date-label,
+#written-review-label,
+#username-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
 }
 
 #features input {
@@ -108,11 +118,9 @@ body {
     margin-right: 5px;
 }
 
-.web-form div {
+/* .web-form div {
     padding-top: 1rem;
-    color: #449ba9;
-    font-size: .9rem;
-}
+} */
 
 .web-form input[type="text"],
 .web-form input[type="date"],
@@ -125,7 +133,7 @@ body {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     appearance: none;
 }
 
@@ -161,5 +169,5 @@ body {
 #performance,
 #design {
     display: flex;
-    height: 25px;
+    padding: 0;
 }
