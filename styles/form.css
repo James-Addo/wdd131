@@ -189,9 +189,14 @@ body {
 }
 
 textarea {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 100px;
     margin-top: 6px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    font-family: var(--body-font);
 }
 
 footer {
@@ -208,3 +213,4 @@ footer p {
     font-size: 20px;
     color: #fff;
 }
+
