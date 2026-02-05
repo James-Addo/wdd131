@@ -57,9 +57,21 @@ h2 {
     margin-top: 12px;
 }
 
+figcaption {
+    font-weight: bold;
+}
+
 #logo figcaption {
     margin-left: 50px;
-    font-weight: bold;
+}
+
+#mobile-view figcaption {
+    margin-left: 25px;
+}
+
+#desktop-view figcaption {
+    margin-left: 32px;
+    margin-top: 50px;
 }
 
 #site-purpose {
@@ -89,17 +101,6 @@ li {
     place-items: center;
 }
 
-#mobile-view figcaption {
-    margin-left: 25px;
-    font-weight: bold;
-}
-
-#desktop-view figcaption {
-    margin-left: 32px;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
 footer {
     background-color: #000;
     padding: 20px 0;
@@ -116,3 +117,5 @@ footer p {
     font-size: 20px;
     color: #fff;
 }
+
+
