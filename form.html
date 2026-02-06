@@ -21,17 +21,17 @@
     </header>
 
     <main>
-        <form class="web-form" method="get" action="review.html">
+        <form method="get" action="review.html" class="web-form">
             <div class="products-class">
-                <label for="product-name">Product Name</label>
+                <label for="product-name">Product Name <span class="astericks">*</span></label>
                 <div class="select-wrapper">
                     <select id="product-name" name="product-name" required>
-                        <option value="" disabled selected>Select a Product... <span class="select-arrow">&#9662;</span></option>
+                        <option value="" disabled selected>Select a Product... &#9662;</option>
                     </select>
                 </div>
             </div>
 
-            <p id="rating-label">Overall Rating:</p>
+            <p id="rating-label">Overall Rating: <span class="astericks">*</span></p>
             <div class="rating-class">
                 <div class="rating-unit unit-1">
                     <label for="rating-1">&star;</label>
@@ -56,14 +56,14 @@
             </div>
 
             <div class="install-date-class">
-                <label for="installation-date">Date of Installation:</label>
+                <label for="installation-date">Date of Installation: <span class="astericks">*</span></label>
                 <input type="date" id="installation-date" name="installation-date" required>
             </div>
 
             <div class="features-class">
                 <p>Which features did you find useful in the product?</p>
                 <i><span class="optional">(Check all that apply)</span></i>
-                
+
                 <div id="durability-id">
                     <input type="checkbox" id="durability" name="durability" value="Durability">
                     <label for="durability">Durability</label>

@@ -35,17 +35,27 @@ const products = [
     }
 ];
 
-const productNameSelect = document.getElementById('product-name');
 
-products.forEach(product => {
-    const option = document.createElement('option');
-    option.value = product.id;
-    option.textContent = product.name;
-    productNameSelect.appendChild(option);
-});
+
+const productSelect = document.getElementById('product-name');
+
+if (productSelect) {
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
 
 if (window.location.pathname.includes('review.html')) {
     let reviewCount = localStorage.getItem('reviewCount') || 0;
     reviewCount++;
     localStorage.setItem('reviewCount', reviewCount);
+
+    const reviewDisplay = document.querySelector(".review-count");
+    if (reviewDisplay) {
+        reviewDisplay.textContent = reviewCount;
+    }
 }
+

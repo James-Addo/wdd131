@@ -9,12 +9,11 @@
 header {
     background-image: linear-gradient(#008080, #004747);
     height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-family: var(--heading-font);
 }
 
 footer {
-    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -35,16 +34,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* .select-arrow {
-    position: absolute;
-    pointer-events: none;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    color: #555;
-} */
 
 .rating-class,
 .install-date-class,
@@ -88,19 +77,19 @@ main {
 }
 
 .rating-class .unit-2 input {
-    margin-left: 5px;
+    margin-left: 3px;
 }
 
 .rating-class .unit-3 input {
-    margin-left: 6px;
+    margin-left: 3px;
 }
 
 .rating-class .unit-4 input {
-    margin-left: 7px;
+    margin-left: 5px;
 }
 
 .rating-class .unit-5 input {
-    margin-left: 7px;
+    margin-left: 5px;
 }
 
 .rating-class {
@@ -125,7 +114,7 @@ main {
 }
 
 .features-class label {
-    margin-top: 5px;
+    margin-top: 4.8px;
 }
 
 .features-class p {
@@ -157,6 +146,10 @@ main {
     font-size: 17px;
     font-weight: lighter;
     color: #000;
+}
+
+.astericks {
+    color: var(--background-color1)
 }
 
 .written-class label {
