@@ -13,10 +13,6 @@ header {
     font-family: var(--heading-font);
 }
 
-footer {
-    margin: 0 auto;
-}
-
 h1 {
     color: #fff;
     font-family: var(--heading-font);
@@ -47,7 +43,6 @@ main {
 }
 
 .products-class label,
-#rating-label,
 .install-date-class label,
 .features-class p,
 .written-class label,
@@ -59,6 +54,10 @@ main {
 }
 
 #rating-label {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--body-font);
+    color: var(--primary-color);
     margin-top: 20px;
     margin-bottom: 5px;
 }
@@ -114,7 +113,7 @@ main {
 }
 
 .features-class label {
-    margin-top: 4.8px;
+    margin-top: 6px;
 }
 
 .features-class p {
@@ -129,11 +128,6 @@ main {
     display: flex;
     padding: 0;
     height: 25px;
-}
-
-.web-form label {
-    font-size: 1rem;
-    font-family: var(--body-font);
 }
 
 .products-class select,
