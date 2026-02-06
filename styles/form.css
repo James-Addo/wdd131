@@ -55,7 +55,7 @@ main {
     font-size: 1rem;
     font-weight: bold;
     font-family: var(--body-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 #rating-label {
@@ -149,7 +149,7 @@ main {
 }
 
 .astericks {
-    color: var(--background-color1)
+    color: #000;
 }
 
 .written-class label {
