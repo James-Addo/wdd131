@@ -1,4 +1,4 @@
-html {
+/* html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -9,7 +9,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 :root {
     --background-color1: #120A8F;
