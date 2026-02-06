@@ -1,23 +1,7 @@
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 600px) {
     main {
-        
         margin: auto;
-    }
-
-    footer {
-        background-color: #000;
-        text-align: center;
-        padding: 20px 0;
-        height: auto;
-        border-top: 1px solid var(--background-color-2);
-    }
-
-    footer p {
-        font-family: var(--body-font);
-        margin: 5px 0 0 0;
-        font-size: 20px;
-        color: #fff;
     }
 
 }
