@@ -18,18 +18,27 @@ html {
     --body-font: "Lato", sans-serif;
 }
 
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(#008080, #004747);
+    text-align: center;
+    height: 60px;
+    place-content: center;
+    margin: 0;
+    font-family: var(--heading-font);
+}
+
 footer {
     max-width: 1300px;
     margin: 0 auto;
 }
 
-h2 {
-    background-image: linear-gradient(#008080, #004747);
+h1 {
     color: #fff;
-    text-align: center;
-    height: 60px;
-    place-content: center;
-    margin: 0;
     font-family: var(--heading-font);
 }
 
@@ -54,11 +63,6 @@ main {
 
 .features label {
     font-family: var(--body-font);
-}
-
-body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
 }
 
 .web-form label {
@@ -199,18 +203,4 @@ textarea {
     font-family: var(--body-font);
 }
 
-footer {
-    background-color: #000;
-    text-align: center;
-    padding: 20px 0;
-    height: auto;
-    border-top: 1px solid var(--background-color-2);
-}
-
-footer p {
-    font-family: var(--body-font);
-    margin: 5px 0 0 0;
-    font-size: 20px;
-    color: #fff;
-}
 

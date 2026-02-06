@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - My Country Ghana</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Country Webpage">
+    <title>WDD 131 - Dynamic Web Fundamentals - Product Review</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review Form">
     <meta name="author" content="James Emmanuel Addo">
     <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,86 +14,90 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
 </head>
-<header>
-    <h2>Product Review</h2>
-</header>
-<main>
-    <form class="web-form" method="get" action="review.html">
-        <div class="products-class">
-            <label for="product-name">Product Name</label>
-            <select id="product-name" name="product-name" required>
-                <option value="" disabled selected>Select a Product &#9662;</option>
-            </select>
-        </div>
 
-        <p id="rating-label">Overall Rating:</p>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
 
-        <div class="rating">
-            <div class="rating-unit">
-                <label for="rating-1">&star;</label>
-                <input type="radio" id="rating-1" name="rating" value="1" required>
+    <main>
+        <form class="web-form" method="get" action="review.html">
+            <div class="products-class">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product &#9662;</option>
+                </select>
             </div>
-            <div class="rating-unit">
-                <label for="rating-2">&star;&star;</label>
-                <input type="radio" id="rating-2" name="rating" value="2" required>
-            </div>
-            <div class="rating-unit">
-                <label for="rating-3">&star;&star;&star;</label>
-                <input type="radio" id="rating-3" name="rating" value="3" required>
-            </div>
-            <div class="rating-unit">
-                <label for="rating-4">&star;&star;&star;&star;</label>
-                <input type="radio" id="rating-4" name="rating" value="4" required>
-            </div>
-            <div class="rating-unit">
-                <label for="rating-5">&star;&star;&star;&star;&star;</label>
-                <input type="radio" id="rating-5" name="rating" value="5" required>
-            </div>
-        </div>
 
-        <div class="install-date">
-            <label for="installation-date">Date of Installation:</label>
-            <input type="date" id="installation-date" name="installation-date" required>
-        </div>
+            <p id="rating-label">Overall Rating:</p>
 
-        <div class="features">
-            <p id="features-label">Which features did you find useful in the product?</p><i><span
-                    class="optional">(Check all that apply)</span></i>
-            <div id="durability-id">
-                <input type="checkbox" id="durability" name="durability" value="Durability">
-                <label for="durability">Durability</label>
+            <div class="rating">
+                <div class="rating-unit">
+                    <label for="rating-1">&star;</label>
+                    <input type="radio" id="rating-1" name="rating" value="1" required>
+                </div>
+                <div class="rating-unit">
+                    <label for="rating-2">&star;&star;</label>
+                    <input type="radio" id="rating-2" name="rating" value="2" required>
+                </div>
+                <div class="rating-unit">
+                    <label for="rating-3">&star;&star;&star;</label>
+                    <input type="radio" id="rating-3" name="rating" value="3" required>
+                </div>
+                <div class="rating-unit">
+                    <label for="rating-4">&star;&star;&star;&star;</label>
+                    <input type="radio" id="rating-4" name="rating" value="4" required>
+                </div>
+                <div class="rating-unit">
+                    <label for="rating-5">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" id="rating-5" name="rating" value="5" required>
+                </div>
             </div>
-            <div id="ease-use-id">
-                <input type="checkbox" id="ease-use" name="ease-use" value="Ease of Use">
-                <label for="ease-use">Ease of Use</label>
-            </div>
-            <div id="performance-id">
-                <input type="checkbox" id="performance" name="performance" value="Performance">
-                <label for="performance">Performance</label>
-            </div>
-            <div id="design-id">
-                <input type="checkbox" id="design" name="design" value="Design">
-                <label for="design">Design</label>
-            </div>
-        </div>
 
-        <div class="written">
-            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
-            <textarea id="written-review" name="review"></textarea>
-        </div>
+            <div class="install-date">
+                <label for="installation-date">Date of Installation:</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
 
-        <div class="user">
-            <label for="username">Your Name <span class="optional">(Optional)</span></label>
-            <input type="text" id="username" name="username">
-        </div>
+            <div class="features">
+                <p id="features-label">Which features did you find useful in the product?</p><i><span
+                        class="optional">(Check all that apply)</span></i>
+                <div id="durability-id">
+                    <input type="checkbox" id="durability" name="durability" value="Durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div id="ease-use-id">
+                    <input type="checkbox" id="ease-use" name="ease-use" value="Ease of Use">
+                    <label for="ease-use">Ease of Use</label>
+                </div>
+                <div id="performance-id">
+                    <input type="checkbox" id="performance" name="performance" value="Performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div id="design-id">
+                    <input type="checkbox" id="design" name="design" value="Design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
 
-        <input type="submit" value="Post Review">
-    </form>
-</main>
-<footer>
-    <p>©️<span id="currentyear"></span> 🌲 James Emmanuel Addo 🌲 Ghana</p>
-    <p id="lastmodified"></p>
-</footer>
+            <div class="written">
+                <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="written-review" name="review"></textarea>
+            </div>
+
+            <div class="user">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span> 🌲 James Emmanuel Addo 🌲 Ghana</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 
 </html>
