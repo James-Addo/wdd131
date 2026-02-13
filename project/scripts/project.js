@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = function () {
   if (window.location.pathname.includes('data-center.html')) {
     const boysEnrol = parseInt(document.getElementById('boys-enrol').textContent);
-    console.log(boysEnrol);
     const girlsEnrol = parseInt(document.getElementById('girls-enrol').textContent);
     const totalEnrol = boysEnrol + girlsEnrol;
     document.getElementById('total-enrol').textContent = totalEnrol;
