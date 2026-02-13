@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Effutu Municipal Education Directorate</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Effutu Municipal Education Directorate Website">
+    <meta name="author" content="James Emmanuel Addo">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="GES Logo" width="100">
+        <span>EFFUTU MUNICIPAL EDUCATION DIRECTORATE</span>
+        <a class="nav-menu" aria-label="Main Menu" href="#"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="data-center.html">Data Center</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="allowance">
+    </div>
+    <main>
+        <h1 id="contact-us-h1">Contact Us</h1>
+        <section class="contact">
+            <div class="com-info">
+                <h2>Contact Information</h2>
+                <h3>Address</h3>
+                <p>Effutu Municipal Education Directorate, Effutu, Ghana</p>
+                <h3>Phone number</h3>
+                <p>+233 4-424-4544</p>
+                <h3>Email</h3>
+                <p>effutumunicipal@gov.gh</p>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.6262833955554!2d-0.6279706450954049!3d5.347439436907846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfde3529386f8ca9%3A0xdc90e2d73a5ee8d9!2sMunicipal%20Assembly%20(Education%20Office)!5e1!3m2!1sen!2sgh!4v1770810231123!5m2!1sen!2sgh"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <p id="in-touch">Get in touch with us</p>
+        <form class="feedback-form" method="get" action="feedback.html">
+            <label for="name">Name: <span class="astericks">*</span></label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email: <span class="astericks">*</span></label>
+            <input type="email" id="email" name="email" required>
+            <p>Purpose of Message <span id="optional">(Optional)</span></p>
+            <div class="category">
+                <div class="purpose">
+                    <input type="radio" id="suggestion" name="category" value="suggestion">
+                    <label for="suggestion">Suggestion</label>
+                </div>
+                <div class="purpose">
+                    <input type="radio" id="complaint" name="category" value="complaint">
+                    <label for="complaint">Complaint</label>
+                </div>
+                <div class="purpose">
+                    <input type="radio" id="inquiry" name="category" value="inquiry">
+                    <label for="inquiry">Inquiry</label>
+                </div>
+                <div class="purpose">
+                    <input type="radio" id="request" name="category" value="request">
+                    <label for="request">Request</label>
+                </div>
+            </div>
+
+            <label for="message">Message: <span class="astericks">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Post Feedback">
+        </form>
+
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🌲 Effutu Municipal Education Directorate 🌲 James Emmanuel Addo 🌲 Ghana
+        </p>
+        <p id="lastmodified"></p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook" width="35"></a>
+            <a href="https://twitter.com"><img src="images/twitter.jpg" alt="Twitter" width="35"></a>
+            <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram" width="35"></a>
+        </nav>
+        <a href="references.html">References Page</a>
+    </footer>
+</body>
+
+</html>
